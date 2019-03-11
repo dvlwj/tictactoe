@@ -1,4 +1,9 @@
-// JavaScript Document
+/**
+ * Created by dvlwj on March 10, 2019
+ * Copyright (c) 2019. All rights reserved.
+ * Last modified March 11, 2019
+ */
+
 $(document).ready(function () {
     // global variable
     player_turn = "x"
@@ -137,13 +142,6 @@ $(document).ready(function () {
 
     // create array list for diagonal top left to bottom right winning condition
     function diagonal1(cell_size) {
-        /*
-        return disini horizontal(cell_size)[x][y]
-        dimana [x] adalah array pertama , y adalah dimensi array didalamnya
-        dimana ini dilooping sampai array pertama = (cell_size - 1)
-        contohnya adalah cell_size = 3 maka dilooping menjaid [0][0],[1][1],[2][2]
-        lalu jika cell_size =4 maka dilooping menjadi [0][0],[1][1],[2][2],[3][3]
-        */
         var arr = []
         for (let index = 0; index < (cell_size); index++) {
             arr.push(horizontal(cell_size)[index][index])
@@ -153,13 +151,6 @@ $(document).ready(function () {
 
     // create array list for diagonal bottom left to top right winning condition
     function diagonal2(cell_size) {
-        /*
-        return disini horizontal(cell_size)[x][y]
-        dimana [x] adalah array terakhir , y adalah dimensi terakhir array didalamnya
-        dimana ini dilooping sampai array terakhhir = (cell_size - (index+1))
-        contohnya adalah cell_size = 3 maka dilooping menjaid [2][0],[1][1],[0][2]
-        lalu jika cell_size =4 maka dilooping menjadi [3][0],[2][1],[1][2],[0][3]
-        */
         var arr = []
         for (let index = 0; index < cell_size; index++) {
             var arit1 = cell_size - (index + 1)
@@ -217,10 +208,6 @@ $(document).ready(function () {
                 } else {
                     temp_score = 0
                 }
-                // if ($('#'+value).hasClass('disable')){
-                //     disable_counter += 1
-                //     console.log('disable: '+disable_counter)
-                // }
             })
             if (temp_score == cell_size) {
                 if (player == "x") {
