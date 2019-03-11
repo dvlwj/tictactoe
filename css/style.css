@@ -1,0 +1,68 @@
+/*david*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#panel-start-game {
+    margin: 20vh;
+}
+
+#tic-tac-toe {
+    padding: 1vh;
+    width: 100%;
+}
+
+#player_turn_info {
+    font-size: 1em;
+    margin: 0 0 5vh 0;
+    padding: 1vh;
+}
+
+#restart_button {
+    font-size: 1em;
+    margin: 5vh 0 0 0;
+    padding: 1vh;
+}
+
+#game_board {
+    background: #faf8fb;
+    overflow-y: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#game_board_table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#game_board_table td {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 1px 1px #c9b3b3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#game_board_table .o ,
+#game_board_table .x {
+    padding: 15px 30px !important;
+    font-size: 40px !important;
+    text-transform: uppercase
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+#game_board_table .disable {
+    background: #fafafa !important;
+}
+#game_board_table .o {
+    color: #f96ca2;
+}
+#game_board_table .x {
+    color: #75adf3;
+}
