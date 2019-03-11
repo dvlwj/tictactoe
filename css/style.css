@@ -6,11 +6,11 @@ body {
 }
 
 #panel-start-game {
-    margin: 20vh;
+    margin-top: 20vh;
 }
 
 #tic-tac-toe {
-    padding: 1vh;
+    padding: 1vh 0;
     width: 100%;
 }
 

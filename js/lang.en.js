@@ -5,7 +5,7 @@ lang = {
     yes: "yes",
     no: "no",
     insert_scale: "Insert your scale",
-    how_many_cell: "How many cell?",
+    how_many_cell: "Fill your gameboard size !",
     error_empty: "Error : Form can't empty and must be a number",
     restart_game: "Restart",
     o_win: "O win the game. Start a new game",
